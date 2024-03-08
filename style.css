@@ -1,13 +1,18 @@
-/* Reset.. */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+/* ------------ IMPORT FONTS ---------- */
+@import url("/asset/fonts/");
+
+
+/*------------- CSS RESETS ------------ */
+*, *::before, *::after {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
 }
 
-/* root variable */
+/* --------------root variable -----------*/
 :root {
   --color-body: #fff;
   --color-primary: #219f95;
@@ -16,15 +21,45 @@
   --color-headings: #1e1e1e;
   --color-light: #696969;
 }
+/* :root{
+  --font-weight-light:300;
+  --font-weight-normal:500;
+  --font-weight-bold:700;
+  --font-weight-extra-bold:900;
+  --color-violet-200:#ddd6fe;
+  --color-violet-300:#c4b5fd;
+  --color-emberald-10:#bff0de;
+  --color-emberald-300:#6ee7b7;
+  --color-emberald-500:#10b981;
+  --color-indigo-50:#eef2ff;
+  --color-indigo-100:#e0e7ff;
+  --color-indigo-200:#c7d2fe;
+  --color-slate-50:#f8fafc;
+  --color-slate-150:#b3bdb9;
+  --color-white:#fff;
+  --border-radius-0:0;
+  --border-radius-8:8px;
+  --border-radius-20:20px;
+} */
 
+
+/* ------------- HTML STYLES ---------- */
 html {
   font-size: 62.5%;
 }
 
+/* ------------- BODYSTYLES ----------- */
 body {
   color: var(--color-body);
   font-size: 1.8rem;
 }
+/* body{
+  font-family: Vazirmatn;
+  background: linear-gradient(to bottom left,var(--color-emberald-300),10%,var(--color-violet-200)) ;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
 
 h1,
 h2,
